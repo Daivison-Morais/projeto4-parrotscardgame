@@ -1,0 +1,144 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #d6f0a7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+}
+.displays{
+  display: flex;
+}
+.espaco{
+  margin-left: 5px;
+}
+
+.titulo {
+  display: flex;
+  
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 56px;
+  color: #75B79E;
+}
+
+.botaocomecar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 35px;
+  border-radius: 7px;
+  background-color: aliceblue;
+  color: #75B79E;
+  cursor: pointer;
+}
+
+.blococartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.caixacarta {
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  height: 146px;
+  background-color: #99CEA8;
+  border-style: solid;
+  border-width: 0.2px;
+  border-color: #5aa370;
+  border-radius: 5px;
+  transition: all 2s
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  background-color: #99CEA8;
+  width: 117px;
+  height: 146px;
+  border-radius: 5px;
+  transition: all 2s
+}
+
+.imgx {
+  width: 100px;
+  height: 100px;
+}
+
+.cardselecionado {
+  border-radius: 4px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #32B72F;
+  box-sizing: border-box;
+ 
+
+}
+
+
+
+/* .face {
+  background-color: #A7E9AF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  
+  transition: all .5s;
+  
+} */
+.escondido{
+  display: none;
+}
+.back-face {
+  position: absolute;
+  transform: rotateY(-180deg);
+}
+.selecionada{
+  transform: rotateY(-180deg);
+}
+@media (max-width: 560px) {
+  body{
+    margin-top: 15px;
+  }
+  .blococartas {
+    width: 118px;
+    position: relative;
+    margin-right: 36px;
+  }
+  .botaocomecar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    color: #75B79E;
+  }
+  .displays{
+    display: flex;
+    flex-direction: column;
+  }
+}

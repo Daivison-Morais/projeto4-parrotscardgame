@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>projeto4-parrotscardgame</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    teste
+<!-- se valor dessa posição = a outro valor noutra posição 
+       (dado através do onclick), da bom; se não errou -->
+  <div>
+    <div class="display">
+      <div class="displays">
+      <div class="titulo">
+        PARROT CARD 
+      </div>
+      <div class="titulo espaco"> GAME</div>
+    </div>
+    </div>
+    <div class="display">
+      <h2 class="botaocomecar" onclick="spoiler(this)">Começar</h2>
+    </div>
+    <div class="display">
+      <ul class="blococartas">
+        
+      </ul>
+    </div>
+  </div>
+    
+  <script src="script.js"></script>
 </body>
 </html>
