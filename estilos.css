@@ -28,17 +28,6 @@ body {
   color: #75B79E;
 }
 
-.botaocomecar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 35px;
-  border-radius: 7px;
-  background-color: aliceblue;
-  color: #75B79E;
-  cursor: pointer;
-}
 
 .blococartas {
   display: flex;
@@ -90,20 +79,6 @@ body {
 
 }
 
-
-
-/* .face {
-  background-color: #A7E9AF;
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  
-  transition: all .5s;
-  
-} */
 .escondido{
   display: none;
 }
@@ -119,7 +94,7 @@ body {
     margin-top: 15px;
   }
   .blococartas {
-    width: 118px;
+    
     position: relative;
     margin-right: 36px;
   }

@@ -1,10 +1,10 @@
 let nomes = ["explodyparrot.gif", "bobrossparrot.gif", "fiestaparrot.gif",
   "metalparrot.gif", "revertitparrot.gif", "tripletsparrot.gif", "unicornparrot.gif"]
 
-
 let doisselecionados = []
+
 let ncartas = prompt("Quantas Cartas?")
-let e;
+let e, contador;
 
 function comparador() {
   return Math.random() - 0.5;
@@ -13,24 +13,6 @@ function comparador() {
 while (ncartas < 4 || ncartas > 14 || ncartas % 2 != 0) {
   ncartas = prompt("Números de cartas entre 4 e 14:")
 }
-
-
-///apresentarCartas()
-//function apresentarCartas() {
-//document.querySelector("ul").innerHTML = ""
-// for (e = 0; e < ncartas; e++) {
-//const templateimgx =
-//`<li class="card">
-
-// <div class="front-face face caixacarta">
-//<img class="imgx" src="./imagens/front.png">
-//</div>
-//</li>`;
-
-//document.querySelector(".blococartas").innerHTML += templateimgx
-
-//}
-//}
 
 let c = 0;
 function spoiler(elemento) {
@@ -77,6 +59,8 @@ function comecarJogo() {
 }
 
 function cardClicado(elemento) {
+  
+  console.log("chamei")
   if (elemento.classList.contains("selecionada")) {
     return
   }
@@ -111,15 +95,12 @@ function cardClicado(elemento) {
         elemento.classList.remove("selecionada")
         elemento.querySelector(".back-face").classList.add("escondido")
         elemento.querySelector(".front-face").classList.remove("escondido")
-      }, 2000)
+      }, 1000)
 
     }
   }
 }
 
-//if (doisselecionados[0] == doisselecionados[1]) {
-// console.log("são iguais")
-//}
 comecarJogo()
 
 
